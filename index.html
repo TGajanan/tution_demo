@@ -254,12 +254,13 @@ At ASSSVVN Online Tuitions, we believe that education is the key to a brighter f
                         Contact Us
                         <span style="content: ''; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); height: 4px; width: 50px; border-radius: 2px; background-color: #2ecc71;"></span>
                     </h2>
-                    <input type="text" class="field" placeholder="Your Name" style="width: 100%; border: 2px solid rgba(0, 0, 0, 0); outline: none; background-color: rgba(230, 230, 230, 0.6); padding: 0.5rem 1rem; font-size: 1.1rem; margin-bottom: 22px; transition: .3s;">
-                    <input type="text" class="field" placeholder="Your Email" style="width: 100%; border: 2px solid rgba(0, 0, 0, 0); outline: none; background-color: rgba(230, 230, 230, 0.6); padding: 0.5rem 1rem; font-size: 1.1rem; margin-bottom: 22px; transition: .3s;">
-                    <input type="text" class="field" placeholder="Phone" style="width: 100%; border: 2px solid rgba(0, 0, 0, 0); outline: none; background-color: rgba(230, 230, 230, 0.6); padding: 0.5rem 1rem; font-size: 1.1rem; margin-bottom: 22px; transition: .3s;">
-                    <textarea placeholder="Message" class="field" style="width: 100%; min-height: 150px;"></textarea>
-                    <button class="btn" style="width: 100%; padding: 0.5rem 1rem; background-color: #2ecc71; color: #fff; font-size: 1.1rem; border: none; outline: none; cursor: pointer; transition: .3s;">Send</button>
-                </div>
+                    <form action="https://formspree.io/f/mvojvenk" method="POST">
+                      <input type="text" name="name" class="field" placeholder="Your Name" style="width: 100%; border: 2px solid rgba(0, 0, 0, 0); outline: none; background-color: rgba(230, 230, 230, 0.6); padding: 0.5rem 1rem; font-size: 1.1rem; margin-bottom: 22px; transition: .3s;" required>
+                      <input type="email" name="email" class="field" placeholder="Your Email" style="width: 100%; border: 2px solid rgba(0, 0, 0, 0); outline: none; background-color: rgba(230, 230, 230, 0.6); padding: 0.5rem 1rem; font-size: 1.1rem; margin-bottom: 22px; transition: .3s;" required>
+                      <input type="number" name="mobilenumber" class="field" placeholder="Phone" style="width: 100%; border: 2px solid rgba(0, 0, 0, 0); outline: none; background-color: rgba(230, 230, 230, 0.6); padding: 0.5rem 1rem; font-size: 1.1rem; margin-bottom: 22px; transition: .3s;" required>
+                      <textarea name="message" placeholder="Message" class="field" style="width: 100%; min-height: 150px;"></textarea>
+                      <button type="submit" class="btn" style="width: 100%; padding: 0.5rem 1rem; background-color: #2ecc71; color: #fff; font-size: 1.1rem; border: none; outline: none; cursor: pointer; transition: .3s;">Send</button>
+                    </form>
             </div>
         </div>
     </body>
